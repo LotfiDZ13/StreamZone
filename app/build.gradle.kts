@@ -11,8 +11,8 @@ android {
         applicationId = "com.DZ.StreamZone"
         minSdk = 24
         targetSdk = 34
-        versionCode 1
-        versionName "1.0"
+        versionCode = 1
+        versionName = "1.0"
     }
 
     buildFeatures {
@@ -26,15 +26,15 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
-    // AndroidX Media3 (ExoPlayer) - مشغل الفيديو المتقدم
+    // AndroidX Media3 (ExoPlayer)
     implementation("androidx.media3:media3-exoplayer:1.2.1")
-    implementation("androidx.media3:media3-exoplayer-hls:1.2.1") // لدعم بث القنوات المباشرة .m3u8
+    implementation("androidx.media3:media3-exoplayer-hls:1.2.1")
     implementation("androidx.media3:media3-ui:1.2.1")
 
-    // Retrofit & Gson - لجلب البيانات وقوائم التشغيل من السيرفرات
+    // Retrofit & Gson
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     
-    // Coroutines - للعمليات في الخلفية دون تجميد الشاشة
+    // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 }
